@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -66,7 +67,7 @@
 			<div class="header">
 				<div class="head-t">
 					<div class="logo">
-						<a href="index.html"><img
+						<a href='<spring:url value="/"/>'><img
 							src="<c:url value="/resources/images/logo.png" />"
 							class="img-responsive" alt="" /> </a>
 					</div>
@@ -132,7 +133,7 @@
 					<div class="clearfix"></div>
 				</div>
 				<ul class="megamenu skyblue">
-					<li class="active grid"><a class="color6" href="index.jsp">Home</a></li>
+					<li class="active grid"><a class="color6" href="<spring:url value="/"/>">Home</a></li>
 					<li class="grid"><a class="color6" href="#">Products</a>
 						<div class="megapanel">
 							<div class="row">
